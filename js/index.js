@@ -12,4 +12,5 @@ databaseRef.once('value').then(function(snapshot){
     const databaseValues = snapshot.val();
 
     console.log(databaseValues);
+    $("#info").append(databaseValues["fact"]);
 });

@@ -39,16 +39,6 @@
         messagingSenderId: "967355117621"
       };
       firebase.initializeApp(config);
-
-      
-var database = firebase.database();
-var databaseRef = database.ref('/');
-databaseRef.once('value').then(function(snapshot){
-
-    const databaseValues = snapshot.val();
-
-    console.log(databaseValues);
-});
     </script>
 
     <!-- jQuery Linked Below-->
